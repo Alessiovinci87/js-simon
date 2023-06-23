@@ -1,8 +1,9 @@
-var numeriCasuali = [];
+let numeriCasuali = [];
 
-for (var i = 0; i < 10; i++) {
-  var numeroCasuale = Math.floor(Math.random() * 11); // Genera un numero casuale compreso tra 0 e 10
-  numeriCasuali.push(numeroCasuale); // Aggiunge il numero casuale all'array
-}
+    for (let i = 0; i < 10; i++) {
+      let numeroCasuale = Math.floor(Math.random() * 11);
+      numeriCasuali.push(numeroCasuale);
+    }
 
-console.log(numeriCasuali);
+    let numeriContainer = document.getElementById("numeri-container");
+    numeriContainer.textContent = numeriCasuali.join(", ");

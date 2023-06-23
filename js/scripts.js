@@ -7,3 +7,8 @@ let numeriCasuali = [];
 
     let numeriContainer = document.getElementById("numeri-container");
     numeriContainer.textContent = numeriCasuali.join(", ");
+
+    setTimeout(function() {
+        console.log("Sono passati 10 secondi!");
+      }, 10 * 1000);
+      
